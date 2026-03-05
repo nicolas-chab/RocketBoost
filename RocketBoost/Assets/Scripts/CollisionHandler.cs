@@ -53,8 +53,11 @@ public class CollisionHandler : MonoBehaviour
     {
         audioSource.Stop();
         SuccessParticles.Play();
-        isControllable= false;
-        GetComponent<Movement>().enabled = false; 
+        isControllable = false;
+        // make sure the movement script stops all active engine effects
+        var move = GetComponent<Movement>();
+        if (move != null) move.StopAllEffects();
+        move.enabled = false; 
         audioSource.PlayOneShot(SuccessSFX);
         Invoke("LoadNextLevel", crashDelay); 
         
@@ -69,7 +72,9 @@ public class CollisionHandler : MonoBehaviour
         audioSource.Stop();
         CrashParticles.Play();
         isControllable = false;
-        GetComponent<Movement>().enabled = false;
+        var move = GetComponent<Movement>();
+        if (move != null) move.StopAllEffects();
+        move.enabled = false;
         audioSource.PlayOneShot(CrashSFX);
         Invoke("ReloadLevel", crashDelay);
     }
