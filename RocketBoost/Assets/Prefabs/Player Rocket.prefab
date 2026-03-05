@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7510231178396347716}
   - component: {fileID: 9018576280833955039}
-  - component: {fileID: 3432631808770177709}
+  - component: {fileID: 6558284951096336564}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -98,7 +98,7 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!114 &3432631808770177709
+--- !u!114 &6558284951096336564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3991080548744368252}
   - component: {fileID: 7552245721934272683}
-  - component: {fileID: 5306282045790184075}
+  - component: {fileID: 2566605180675523274}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -225,7 +225,7 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!114 &5306282045790184075
+--- !u!114 &2566605180675523274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 1742393750175012044}
   - component: {fileID: 3145828759622696250}
   - component: {fileID: 7260850271315638675}
+  - component: {fileID: 1930512823846702404}
   m_Layer: 0
   m_Name: Player Rocket
   m_TagString: Untagged
@@ -560,6 +561,18 @@ MonoBehaviour:
   CrashSFX: {fileID: 8300000, guid: f06fc9087532cc04faa467c6fc2b6569, type: 3}
   SuccessParticles: {fileID: 4052057251566271662}
   CrashParticles: {fileID: 8768819977001892948}
+--- !u!114 &1930512823846702404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7151364287441717553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29f856c2288b3b4987eb044260e215c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitApplication
 --- !u!1001 &496471560730873179
 PrefabInstance:
   m_ObjectHideFlags: 0
