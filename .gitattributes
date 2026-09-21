@@ -5,3 +5,5 @@
 *.anim linguist-generated=true
 *.asset linguist-generated=true
 *.prefab linguist-generated=true
+* linguist-detectable=false
+*.cs linguist-detectable=true
